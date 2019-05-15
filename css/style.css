@@ -52,50 +52,48 @@ body {
   margin-top: 22px;
 }
 
-.accept input[type="checkbox"] {
-  opacity: 0;
-}
-.accept label {
-  position: relative;
-  display: inline-block;
+.accept {
+  display: flex;
 }
 
-.accept label::before,
-.accept label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-}
-.accept label::before {
-  width: 24px;
+.form-check-accept {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-self: center;
+  flex-shrink: 0;
+  position: relative;
   height: 25px;
+  width: 25px;
   border: 1px solid #b3c0ce;
   background-color: #fafbfb;
+  cursor: pointer;
+  outline: none;
 }
-.accept label::after {
-  width: 16px;
-  height: 12px;
-  border-left: 2px solid #0093ff;
-  border-bottom: 2px solid #0093ff;
+
+.form-check-accept:checked::before {
+  height: 40%;
+  width: 80%;
+  content: '';
+  border: 2px solid #0093ff;
+  border-top: none;
+  border-right: none;
+  margin: auto;
+  margin-bottom: 40%;
   transform: rotate(-45deg);
-  left: 4px;
-  top: 3px
-}
-.accept input[type="checkbox"] + label::after {
-  content: none;
-}
-.accept input[type="checkbox"]:checked + label::after {
-  content: "";
 }
 
 .form-check-label {
-  width: 500px;
-  height: 12px;
+  display: flex;
+  align-items: center;
   color: #44566c;
-  font-family: "Myriad Pro";
+  font-family: 'Myriad Pro';
   font-size: 12px;
   font-weight: 400;
+  padding-left: 1rem;
 }
+
 .end-image {
   margin-top: 214px;
   margin-bottom: 50px;

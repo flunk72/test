@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <title>FINLEO</title>
 </head>
 <body>
@@ -19,44 +20,44 @@
                   </nav>
           <div class="main">
               <div class="row justify-content-center">
-                  <div class="col-6">
-                    <a href="" class="enter"><span>Вход</span></a>
-                    <a href="" class="reg ml-4"><span>Регистрация</span></a>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="enter"><span>Вход</span></a>
+                    <a href="#" class="reg ml-4"><span>Регистрация</span></a>
                   </div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-6">  
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12">  
                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-light active">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Юрлицо
+                    <label class="btn btn-light active" for="legalface">
+                        <input type="radio" name="legalface" id="#" autocomplete="off" checked> Юрлицо
                     </label>
-                    <label class="btn btn-light">
-                        <input type="radio" name="options" id="option2" autocomplete="off"> ИП
+                    <label class="btn btn-light" for="IE">
+                        <input type="radio" name="IE" id="#" autocomplete="off"> ИП
                     </label>
-                    <label class="btn btn-light">
-                        <input type="radio" name="options" id="option3" autocomplete="off"> Физлицо
+                    <label class="btn btn-light" for="physicface">
+                        <input type="radio" name="physicface" id="#" autocomplete="off"> Физлицо
                     </label>
                 </div>
                 </div>
               </div>
               <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                     <form>
                         <div class="form-group mt-5">
-                          <input type="text" class="form-control" placeholder="ИМЯ">
+                          <input type="text" name="name" class="form-control" placeholder="ИМЯ">
                         </div>
                         <div class="form-group">
-                          <input type="text" class="form-control form-input" placeholder="ИНН">
+                          <input type="text" name="doc" class="form-control form-input" placeholder="ИНН">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control form-input" id="#" aria-describedby="emailHelp" placeholder="E-mail">
+                            <input type="email" name="mail" class="form-control form-input" id="#" aria-describedby="emailHelp" placeholder="E-mail">
                         </div>
                         <div class="form-group">
-                              <input type="password" class="form-control form-input" id="#" placeholder="Номер телефона">
+                              <input type="phone" name="number" class="form-control form-input" id="#" placeholder="Номер телефона">
                         </div>
-                        <div class="form-check accept mt-5">
-                            <input type="checkbox" class="form-check-input" id="#">
-                            <label class="form-check-label" for="exampleCheck1">Нажимая «Отправить», я подтверждаю согласие  с политикой обработки персональных данных.</label>
+                        <div class="accept mt-5">
+                            <input type="checkbox" class="form-check-accept" name="form-check-accept">
+                            <label class="form-check-label" for="form-check-accept">Нажимая «Отправить», я подтверждаю согласие  с политикой обработки персональных данных.</label>
                           </div>
                           <button type="submit" class="btn btn-primary btn-block mt-4">Зарегистрироваться</button>
                       </form>

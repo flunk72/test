@@ -51,7 +51,10 @@ body {
 .form-input {
   margin-top: 22px;
 }
-
+.form-input:focus,
+.form-input:hover {
+  border-color: blue;
+}
 .accept {
   display: flex;
 }

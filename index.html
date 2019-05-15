@@ -42,18 +42,21 @@
               </div>
               <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-12 error">
-                    <form>
+                    <form class="needs-validation" novalidate>
                         <div class="form-group mt-5">
-                          <input type="text" name="name" class="form-control" placeholder="ИМЯ">
+                          <input type="text" name="name" class="form-control is-invalid" placeholder="ИМЯ" required>
+                          <div class="invalid-feedback">Это поле обязательное для заполнения</div>
                         </div>
                         <div class="form-group">
-                          <input type="text" name="doc" class="form-control form-input" placeholder="ИНН">
+                          <input type="text" name="doc" class="form-control form-input is-invalid" placeholder="ИНН" required>
+                          <div class="invalid-feedback">ИНН должен состоять из 10 или 12 цифр</div>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="mail" class="form-control form-input" id="#" aria-describedby="emailHelp" placeholder="E-mail">
+                            <input type="email" name="mail" class="form-control form-input is-invalid" id="#" aria-describedby="emailHelp" placeholder="E-mail" required disabled>
+                            <div class="invalid-feedback">Пожалуйста введите свой e-mail</div>
                         </div>
                         <div class="form-group">
-                              <input type="phone" name="number" class="form-control form-input" id="#" placeholder="Номер телефона">
+                              <input type="tel" name="number" class="form-control form-input" id="#" placeholder="Номер телефона">
                         </div>
                         <div class="accept mt-5">
                             <input type="checkbox" class="form-check-accept" name="form-check-accept">
@@ -74,5 +77,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

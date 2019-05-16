@@ -55,6 +55,25 @@ body {
 .form-input:hover {
   color: blue;
 }
+
+.number-phone {
+  display: flex;
+  border: 1px solid #b3c0ce;
+  border-radius: 4px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.number-phone label {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: #fff;
+  padding: 0 5px;
+  color: #b3c0ce;
+  font-size: 14px;
+}
+
 .accept {
   display: flex;
 }

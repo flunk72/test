@@ -53,7 +53,7 @@ body {
 }
 .form-input:focus,
 .form-input:hover {
-  border-color: blue;
+  color: blue;
 }
 .accept {
   display: flex;
